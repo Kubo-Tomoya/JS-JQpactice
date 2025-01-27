@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="lesson5.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    // ここに処理を記述
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+  <script>
+    document.getElementById('button').addEventListener('click', function() {
+      const value = document.getElementById('value').value;
+      const box = document.getElementById('box');
+
+      box.style.backgroundColor = '';
+
+      if (value === '1') {
+        box.style.backgroundColor = 'red';
+      } else if (value === '2') {
+        box.style.backgroundColor = 'green';
+      } else if (value === '3') {
+        box.style.backgroundColor = 'blue';
+      }
+    });
+  </script>
+  
+</body>
+</html>
