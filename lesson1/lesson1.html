@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>クリックイベント</title>
+  <link rel="stylesheet" type="text/css" href="lesson1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="button">
+
+          <p id="hello">button</p>
+        
+        </div><!-- button -->
+    </div><!-- wrapper -->
+    
+    <script>
+      let hello_tag = document.getElementById('hello');
+      hello_tag.addEventListener("click", function() {
+        alert("クリックされました!");
+      });
+      </script>
+</body>
+</html>
